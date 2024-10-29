@@ -18,7 +18,7 @@ const debounce = (func, delay) => {
   };
 };
 ```
-- Utility function for sorting any array of function by specific key.
+- Utility function for sorting any array of object by specific key.
 ```js
 export function sortByKey(array, key) {
     return array.sort((a, b) => (a[key] > b[key] ? 1 : -1));
