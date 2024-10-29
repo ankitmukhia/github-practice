@@ -7,16 +7,3 @@ This is just github exampl/practice.
 ```js
   const delay = (ms) new Promise((resolve) => setTimeout(() => resolve()), ms)
 ```
-
-- Utility function for Debouncing 
-```js
-const debounce = (func, delay) => {
-  let timeoutId;
-  return function(...args) {
-    if(timeoutId) clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      func.apply(this, args);
-    }, delay)
-  }
-}
-```
