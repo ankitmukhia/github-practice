@@ -30,3 +30,9 @@ function generateId(prefix = 'id') {
     return `${prefix}_${Math.random().toString(36).substr(2, 9)}`;
 }
 ```
+- Utility function deep copy of object 
+```js
+export function deepClone(obj) {
+    return JSON.parse(JSON.stringify(obj));
+}
+```
