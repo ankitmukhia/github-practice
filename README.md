@@ -6,7 +6,6 @@
 ```js
 const delay = (ms) new Promise((resolve) => setTimeout(() => resolve()), ms)
 ```
-
 - Utility function for Debouncing a function call.
 ```js
 const debounce = (func, delay) => {
@@ -18,4 +17,10 @@ const debounce = (func, delay) => {
     }, delay);
   };
 };
+```
+- Utility function for sorting any array of function by specific key.
+```js
+export function sortByKey(array, key) {
+    return array.sort((a, b) => (a[key] > b[key] ? 1 : -1));
+}
 ```
